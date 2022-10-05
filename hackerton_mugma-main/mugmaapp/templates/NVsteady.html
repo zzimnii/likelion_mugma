@@ -1,0 +1,15 @@
+<h1>논비건 steady 페이지</h1>
+<a href="{% url 'Vsteady' %}"><button type="button">비건 steady</button></a>
+{% for recipe in recipes %}
+<table width="90%">
+    <tr>
+        <td width="30%"><a href="{% url 'detail' recipe.id %}">{{ recipe.title }}</a></td>
+        <td width="30%"><p>
+            {% if recipe.photo %}
+            <img src="{{ recipe.photo.url }}" alt="" height="50">
+            {% endif %}</p>
+        </td>
+        <td width="30%">{{ recipe.author.username }}</td>
+    </tr>
+</table><br>
+{% endfor %}

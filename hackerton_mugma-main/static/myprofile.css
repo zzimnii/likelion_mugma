@@ -1,0 +1,115 @@
+#backgorundImgDiv {
+    background-image: url(../img/mainBack.png);
+    width: 1512px;
+    height: 1132px;
+    margin: auto;
+}
+
+#okbtn {
+    position: relative;
+    top: 190px;
+    right: 77px;
+
+    background-color: white;
+    border: white;
+    float: right;
+    margin-right: 20px;
+}
+
+#myprofilewWritePostImg {
+    position: relative;
+    top: 290px;
+    left: 150px;
+}
+
+#title {
+    position: relative;
+    top: -195px;
+    left: 415px;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    color: white;
+}
+
+#mugmaLogo {
+    position: relative;
+    top: -100px;
+    left: 200px;
+}
+
+#textwriteDiv {
+    width: 831px;
+    height: 325px;
+    
+    position: relative;
+    top: -320px;
+    left: 400px;
+    
+    background-color: white;
+    border-radius: 74px;
+    
+}
+
+#textwrite {
+    width: 736px;
+    height: 287px;
+
+    position: relative;
+    top: 17px;
+    left: 45px;
+
+    border: white;
+
+    resize: none;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #FFCF76;
+}
+
+#userName{
+    width: 157px;
+    height: 48px;
+    
+    position: relative;
+    top: -50px;
+    left: 40px;
+    
+    border: none;
+    background-color:#FFF7EA;
+    border-bottom: solid 3px #F3A20E;
+
+    text-align: center;
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #FFCF76;
+}
+
+input::placeholder {
+    color: #FFCF76;
+  }
+  
+textarea::placeholder {
+    color: #FFCF76;
+    font-weight: bold;
+  }

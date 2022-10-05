@@ -1,0 +1,158 @@
+#backgorundImgDiv {
+    background-image: url(../img/mainBack.png);
+    width: 1512px;
+    height: 1132px;
+    margin: auto;
+}
+
+#okbtn {
+    position: relative;
+    top: 190px;
+    right: 77px;
+
+    background-color: white;
+    border: white;
+    float: right;
+    margin-right: 20px;
+}
+
+#myprofilewWritePostImg {
+    position: relative;
+    top: 320px;
+    left: 150px;
+}
+
+#titleBackImg {
+    position: relative;
+    top: -230px;
+    left: 650px;
+}
+
+#title {
+    position: relative;
+    top: -292px;
+    left: 725px;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    color: white;
+}
+
+#mugmaLogo {
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+
+#textwriteDiv {
+    width: 831px;
+    height: 325px;
+    
+    position: relative;
+    top: -320px;
+    left: 400px;
+    
+    background-color: white;
+    border-radius: 74px;
+    
+}
+
+#textwrite {
+    width: 736px;
+    height: 287px;
+
+    position: relative;
+    top: 17px;
+    left: 45px;
+
+    border: white;
+
+    resize: none;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #FFCF76;
+}
+
+#userName{
+    width: 157px;
+    height: 48px;
+    
+    position: relative;
+    top: -190px;
+    left: 200px;
+    
+    border: none;
+    background-color:#FFF7EA;
+    border-bottom: solid 3px #F3A20E;
+
+    text-align: center;
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #F3A20E;
+}
+
+.foodName {
+    display: inline-block;
+    position: relative;
+    top:-65px;
+
+    color: #F3A20E;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.foodInfo {
+    width: 445px;
+    height: 150px;
+
+    display: inline-block;
+    margin: 10px;
+}
+
+#page {
+    width: 950px;
+
+    position: relative;
+    top: -470px;
+    left: 380px;
+}
+
+.foodImg {
+    border-radius: 100%;
+    width: 180px;
+}
+
+#paging {
+    background-color:#f1b342;
+    display:inline-block;
+    position:relative;
+    left: 760px;
+    top: 60px;
+  }
+  

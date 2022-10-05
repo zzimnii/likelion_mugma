@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGMA</title>
+    <link href="{% static 'mugup.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+    <header>
+        <div class="menubar">
+            <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+            <a class="b" onclick="location.href='/normal'">NORMAL</a>
+            <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+            {% if user.is_authenticated %}
+            <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+            <a href="{% url 'logout' %}">logout</a>
+            {% else %}
+            <a class="d" onclick="location.href='/login'">LOGIN</a>
+            {% endif %}
+          </div>
+        <a href="/"><img class="logo" src="{% static 'img/Group 157.png' %}" /></a>
+        <input class="search" type="text" />
+    </header>
+    
+    <div id="backgroundImgDiv">
+        <button id="okbtn">
+            <img src="{% static 'img/mumugCheck.png' %}" alt="확인버튼" id="check">
+        </button>
+        <img src="{% static 'img/mugupback.png' %}" alt="배경모양" id="myprofilewWritePostImg">
+        <img src="{% static 'img/titleImg.png' %}" alt="제목동그라미" id="titleBackImg">
+        <div id="title">MUGUP</div>
+        <div id="userInfo">
+            <img src="{% static 'img/mugmalogo.png' %}" alt="머그마캐릭터" id="mugmaLogo">
+            <div id="userName">그마군</div>
+        </div>
+        <div id="page">
+            {% for post in like_posts %}
+            <div class="foodInfo">
+                <img src="{{ post.photo.url }}" alt="음식 사진" class="foodImg">
+                <img src="{% static 'img/fork.png' %}" alt="포크" class="forkImg">
+                <a href="{% url 'detail' post.id %}"><p class="foodName">{{ post.title }}</p></a>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="paging">
+            {% if like_posts.has_previous %}
+            <a href="?&page={{ like_posts.previous_page_number }}">&lt;</a>
+            {% else %}
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">&lt;</a>
+            {% endif %}
+
+            {% for page_number in like_posts.paginator.page_range %}
+            {% if page_number == like_posts.number %}
+            <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+
+            {% else %}
+            <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+
+            {% endif %}
+            {% endfor %}
+
+            {% if like_posts.has_next %}
+            <a class="page-link" href="?&page={{ like_posts.next_page_number }}">&gt;</a>
+
+            {% else %}
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="#">&gt;</a>
+
+            {% endif %}
+        </div>
+    </div>
+    <footer>
+        <img class="footerimg" src="{% static 'img/company.png' %}" />
+    </footer>
+</body>
+
+</html>

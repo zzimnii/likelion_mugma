@@ -1,0 +1,266 @@
+body{
+    width: 1513px;
+    margin: auto;
+}
+
+.buttons {
+    position: relative;
+    left: 1100px;
+    top: -150px;
+}
+
+.oBtn {
+    margin-left: 50px;
+}
+
+#btn {
+    border: white;
+    background-color: white;
+}
+
+#perpect {
+    position: relative;
+    left: 90px;
+    top: -170px;
+}
+
+#title {
+    position: relative;
+    left: 336px;
+    top: -787px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+
+    color: #99660A;
+}
+
+#date {
+    position: relative;
+    left: 253px;
+    top: -782px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+
+    color: #99660A;
+}
+
+#chef {
+    position: relative;
+    left: 625px;
+    top: -808px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+
+    color: #99660A;
+}
+
+#contentDiv {
+    width: 458px;
+    height: 358px;
+}
+
+#content {    
+    position: relative;
+    left: 247px;
+    top: -819px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    text-indent: 20px;
+    text-transform: uppercase;
+
+    color: #99660A;
+}
+
+#whiteFork { 
+    position: relative;
+    left: 572px;
+    top: -819px;
+}
+
+#forkNum {
+    position: relative;
+    left: 603px;
+    top: -880px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+    
+    color: white;
+}
+
+#foodImg {
+    width: 395px;
+    height: 395px;
+
+    position: relative;
+    left: 903px;
+    top: -1430px;
+    border-radius: 200px;
+}
+
+#commentBackImg {
+    position: relative;
+    left: 130px;
+    top: -1230px;
+}
+
+#conpanyInfo {
+    position: relative;
+    top: -1830px;
+}
+
+#commentBox {
+    position: relative;
+    left: 130px;
+    top: -1770px;
+
+    border-radius: 70px;
+
+    width: 1276px;
+    height: 332.91px;
+
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+
+#commentItem {
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: -110px;
+}
+
+#commentContent {
+    width: 980px;
+    padding: 20px;
+    border: solid 0.3px #F3A20E;
+    color: #F3A20E;
+    border-radius: 10px;
+
+    position: relative;
+    left: 120px;
+    top: -130px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+}
+
+#userImg {
+    width: 75px;
+    height: 75px;
+}
+
+#userName {
+    position: relative;
+    left: 15px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    /* ㄹㄹ */
+
+    color: #F3A20E;
+}
+
+#commentBox::-webkit-scrollbar {
+    width: 10px;
+  }
+#commentBox::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+#commentBox::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: gray;
+  }
+#commentBox::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+#commentWrite {
+    position: relative;
+    left: 180px;
+    top: -1770px;
+
+    margin-top: 30px;
+}
+
+#commentContentWrite {
+    width: 930px;
+    height: 112;
+    padding: 20px;
+    border: solid 0.3px #F3A20E;
+    color: #F3A20E;
+    border-radius: 10px;
+
+    position: relative;
+    left: 120px;
+    top: -130px;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+}
+
+#writeGo {
+    position: relative;
+    left: 1100px;
+    top: -200px;
+
+    width: 35px;
+    height: 35px;
+}

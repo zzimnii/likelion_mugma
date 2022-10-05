@@ -1,0 +1,44 @@
+<h1>비건 trendy 페이지</h1>
+<a href="{% url 'NVtrendy' %}"><button type="button">논비건 trendy</button></a>
+{% for recipe in recipes %}
+<table width="90%">
+    <tr>
+        <td width="30%"><a href="{% url 'detail' recipe.id %}">{{ recipe.title }}</a></td>
+        <td width="30%">
+            <p>
+                {% if recipe.photo %}
+                <img src="{{ recipe.photo.url }}" alt="" height="50">
+                {% endif %}
+            </p>
+        </td>
+        <td width="30%">{{ recipe.author.username }}</td>
+    </tr>
+</table><br>
+{% endfor %}
+
+<div id="paging">
+    <!-- 이전페이지 -->
+    {% if recipes.has_previous %}
+    <a href="?&page={{ recipes.previous_page_number }}">&lt;</a>
+    {% else %}
+    <a class="page-link" tabindex="-1" aria-disabled="true" href="#">&lt;</a>
+    {% endif %}
+    <!-- 페이지리스트 -->
+    {% for page_number in recipes.paginator.page_range %}
+    {% if page_number == recipes.number %}
+    <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+
+    {% else %}
+    <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+
+    {% endif %}
+    {% endfor %}
+    <!-- 다음페이지 -->
+    {% if recipes.has_next %}
+    <a class="page-link" href="?&page={{ recipes.next_page_number }}">&gt;</a>
+
+    {% else %}
+    <a class="page-link" tabindex="-1" aria-disabled="true" href="#">&gt;</a>
+
+    {% endif %}
+</div>

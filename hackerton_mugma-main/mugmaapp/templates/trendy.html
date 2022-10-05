@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUGMA</title>
+    <link rel="stylesheet" href="{% static 'trendy.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %} " />
+  </head>
+  <body>
+    <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+    <header>
+      <div class="menubar">
+        <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+        <a class="b" onclick="location.href='/normal'">NORMAL</a>
+        <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+        {% if user.is_authenticated %}
+        <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+        <a href="{% url 'logout' %}">logout</a>
+        {% else %}
+        <a class="d" onclick="location.href='/login'">LOGIN</a>
+        {% endif %}
+      </div>
+      <img
+        class="logo"
+        src="{% static 'img/Group 157.png' %}"
+        onclick="location.href='/'"
+      />
+      <input class="search" type="text" placeholder="검색하세요" />
+    </header>
+    <img src="{% static 'img/honey.png' %}" alt="꿀떨어지는윗장식">
+    <section id="ranking">
+      <div>
+        <div id="trendypage">
+          <div class="foodItem">
+            <div class="mugimg"><img src="{% static 'img/Union.png' %}" /></div>
+            <div class="foodimg"><img src="{% static 'img/불닭구리.png' %}" /></div>
+            <div class="text">불닭구리</div>
+            <div class="chef">김셰프</div>
+          </div>
+          <div class="foodItem">
+            <div class="mugimg"><img src="{% static 'img/Union.png' %}" /></div>
+            <div class="foodimg"><img src="{% static 'img/레몬 딜버터.png' %}" /></div>
+            <div class="text">레몬 딜버터</div>
+            <div class="chef">한셰프</div>
+          </div>
+          <div class="foodItem">
+            <div class="mugimg"><img src="{% static 'img/Union.png' %}" /></div>
+            <div class="foodimg"><img src="{% static 'img/라이스페이퍼 떡볶이.png' %}" /></div>
+            <div class="text">라이스페이퍼 떡볶이</div>
+            <div class="chef">박셰프</div>
+          </div>
+          <div class="first"></div>
+          <div class="second"></div>
+          <div class="third"></div>
+        </div>
+      </div>
+    </section>
+    <input
+      class="btn"
+      type="button"
+      value="비건"
+      onclick="location.href='vegan.html'"
+    />
+    <footer>
+      <img class="footerimg" src="{% static 'img/company.png' %}" />
+    </footer>
+    <script src="{% static 'trend.js' %}"></script>
+  </body>
+</html>

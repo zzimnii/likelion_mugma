@@ -1,0 +1,208 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css");
+
+* {
+  font-family: "NanumSquareRound";
+}
+
+body {
+  width: 1513px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  width: 1513px;
+  height: 99.92px;
+  top: 0px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 5px 0px gray;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.nav {
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #ffcf76;
+  margin: 100px;
+}
+
+.nav:hover {
+  color: #f1b342;
+}
+
+#a {
+  position: relative;
+  top: 30px;
+}
+
+#b {
+  position: relative;
+  left: -100px;
+  top: 30px;
+}
+
+#c {
+  position: relative;
+  left: -180px;
+  top: 30px;
+}
+
+.logo {
+  position: relative;
+  left: 650px;
+  top: -30px;
+}
+
+#d {
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+.search {
+  position: relative;
+  left: 960px;
+  top: -175px;
+
+  width: 200px;
+  height: 30px;
+
+  font-size: 20px;
+}
+
+.footerimg {
+  position: relative;
+}
+
+.footertext {
+  position: relative;
+  left: 450px;
+  top: -200px;
+}
+
+/*글쓰기로 넘어가는 버튼 안나와으악*/
+.postwriting {
+  position: relative;
+  border-radius: 50%;
+  background: url("./img/Group\ 101.png") no-repeat center center;
+  background-size: cover;
+}
+
+#trendypage {
+  width: 1500px;
+  height: 400px;
+  position: relative;
+  left: 150px;
+}
+
+.foodItem {
+  width: 300px;
+  height: 300px;
+
+  position: relative;
+  left: 20px;
+
+  display: inline-block;
+  margin: 50px;
+}
+
+.postwriting:hover {
+  background: url("./img/Group\ 102.png") no-repeat center center;
+  background-size: cover;
+}
+
+.like-image {
+  position: relative;
+  left: 280px;
+  top: -250px;
+
+  width: 30px;
+  height: 30px;
+
+  background: url("./img/fork.png") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+.like-image img {
+  cursor: pointer;
+  width: 60px;
+  display: block;
+}
+
+.like-image.active {
+  background: url("./img/fork\ click.png") no-repeat center center;
+  background-size: cover;
+}
+
+.mugimg {
+  position: relative;
+  width: 281px;
+  height: 284px;
+}
+
+.text {
+  position: relative;
+  width: 189px;
+  height: 35px;
+  top: -220px;
+  left: 100px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.chef {
+  position: relative;
+  left: 140px;
+  top: -222px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.foodimg {
+  position: relative;
+  left: 90px;
+  top: -240px;
+
+  width: 148px;
+  height: 147px;
+  border-radius: 100px;
+}
+
+.btn {
+  position: relative;
+  left: 1400px;
+  top: -400px;
+}
+
+.first {
+  background: url("./img/Group\ 115.png") no-repeat center center;
+  width: 83.4px;
+  height: 89px;
+  margin-left: 68.6px;
+  margin-top: -508px;
+}
+
+.second {
+  background: url("./img/Group\ 116.png") no-repeat center center;
+  width: 83.4px;
+  height: 89px;
+  margin-left: 472px;
+  margin-top: -80px;
+}
+
+.third {
+  background: url("./img/Group\ 117.png") no-repeat center center;
+  width: 83.4px;
+  height: 89px;
+  margin-left: 879px;
+  margin-top: -101px;
+}

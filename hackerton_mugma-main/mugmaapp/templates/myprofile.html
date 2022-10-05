@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGMA</title>
+    <link href="{% static 'myprofile.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+    <header>
+        <div class="menubar">
+            <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+            <a class="b" onclick="location.href='/normal'">NORMAL</a>
+            <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+            {% if user.is_authenticated %}
+            <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+            <a href="{% url 'logout' %}">logout</a>
+            {% else %}
+            <a class="d" onclick="location.href='/login'">LOGIN</a>
+            {% endif %}
+          </div>
+        <a href="/"><img class="logo" src="{% static 'img/Group 157.png' %}" /></a>
+        <input class="search" type="text" />
+    </header>
+    <div id="backgroundImgDiv">
+        <button type="submit" id="okbtn">
+            <img src="{% static 'img/mumugCheck.png' %}" alt="확인버튼" id="check">
+        </button>
+        <img src="{% static 'img/myprofileWrite.png' %}" alt="프로필 작성 부분 그림" id="myprofilewWritePostImg">
+        <div id="title">MY PROFILE</div>
+        <div id="userInfo">
+            <img src="{% static 'img/mugmalogo.png' %}" alt="머그마캐릭터" id="mugmaLogo">
+            <input type="text" placeholder="그마군" id="userName">
+        </div>
+        <div id="textwriteDiv">
+            <textarea placeholder="내용을 입력하세요" id="textwrite"></textarea>
+        </div>
+    </div>
+    <footer>
+        <img class="footerimg" src="{% static 'img/company.png' %}" />
+    </footer>
+</body>
+
+</html>

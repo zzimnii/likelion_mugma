@@ -1,0 +1,388 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css");
+
+* {
+  font-family: "NanumSquareRound";
+}
+
+header {
+  position: fixed;
+  width: 1512px;
+  height: 99.92px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 5px 0px gray;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.honeyback {
+  position: absolute;
+  width: 1512.57px;
+  height: 358px;
+  left: 0px;
+  top: 0px;
+}
+
+.logo {
+  position: fixed;
+  width: 294.79px;
+  height: 186px;
+  left: 616.21px;
+  top: 0px;
+}
+
+.search {
+  position: fixed;
+  left: 1300px;
+  top: 40px;
+}
+
+.menubar {
+  margin-top: 30px;
+  margin-left: 100px;
+  word-spacing: 20%;
+}
+
+.a {
+  width: 181px;
+  height: 52.26px;
+  left: 22px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.a:hover {
+  color: #f1b342;
+}
+
+.b {
+  width: 168px;
+  height: 52.26px;
+  margin-left: 70px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.b:hover {
+  color: #f1b342;
+}
+
+.c {
+  width: 200px;
+  height: 52.26px;
+  margin-left: 70px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.c:hover {
+  color: #f1b342;
+}
+
+.d {
+  width: 200px;
+  height: 52.26px;
+  margin-left: 500px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.d:hover {
+  color: #f1b342;
+}
+
+.footerimg {
+  position: absolute;
+  top: 1138px;
+}
+
+
+.footertext {
+  position: absolute;
+  width: 550px;
+  height: 120px;
+  top: 1292px;
+  left: 450px;
+}
+
+.trendyrank {
+  background-image: url('img/Ellipse 31.png');
+  width: 600px;
+  height: 504px;
+  margin-top: 332px;
+  margin-left: 200px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.arrow {
+  margin-left: 756px;
+  margin-top: -3px;
+}
+
+.trendylist {
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #f1b342;
+}
+
+.normalrank {
+  background-image: url("./img/Ellipse 30.png");
+  width: 600px;
+  height: 504px;
+  margin-left: 976px;
+  margin-top: -521px;
+  /* z-index: 4; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.normallist {
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #f1b342;
+  margin-left: 100px;
+}
+
+.crown3 {
+  width: 70px;
+  height: 27px;
+  left: 30px;
+  top: 147px;
+}
+
+.crown2 {
+  width: 48px;
+  height: 24px;
+  left: 45px;
+  top: 289px;
+}
+
+.crown {
+  width: 24px;
+  height: 24px;
+  left: 60px;
+  top: 414px;
+}
+
+.one {
+  width: 37px;
+  height: 52px;
+  left: 51px;
+  top: 126px;
+
+  /* aa */
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #f1b342;
+}
+
+.two {
+  width: 78px;
+  height: 49px;
+  left: 55px;
+  top: 265px;
+
+  /* aa */
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #f1b342;
+}
+
+.three {
+  width: 78px;
+  height: 49px;
+  left: 59px;
+  top: 397px;
+
+  /* aa */
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #f1b342;
+}
+
+.onepic {
+  width: 114px;
+  height: 115px;
+  left: 86px;
+  top: 167px;
+}
+
+.twopic {
+  width: 114px;
+  height: 116.04px;
+  left: 87px;
+  top: 301px;
+}
+
+.threepic {
+  width: 114px;
+  height: 116.04px;
+  left: 85px;
+  top: 438px;
+}
+
+.onetext {
+  width: 250px;
+  height: 46px;
+  /* left: 222px;
+  top: 159px; */
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.twotext {
+  width: 298px;
+  height: 59px;
+  left: 222px;
+  top: 295px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.threetext {
+  width: 144px;
+  height: 59px;
+  left: 222px;
+  top: 435px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.nonepic {
+  width: 114px;
+  height: 115px;
+  left: 100px;
+  top: 167px;
+}
+
+.ntwopic {
+  width: 114px;
+  height: 116.04px;
+  left: 100px;
+  top: 301px;
+}
+
+.nthreepic {
+  width: 114px;
+  height: 116.04px;
+  left: 100px;
+  top: 438px;
+}
+
+.nonetext {
+  width: 250px;
+  height: 46px;
+  left: 222px;
+  top: 159px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.ntwotext {
+  width: 298px;
+  height: 59px;
+  left: 222px;
+  top: 295px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.nthreetext {
+  width: 144px;
+  height: 59px;
+  left: 222px;
+  top: 435px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #f1b342;
+}
+
+.listdetail{
+  margin-left: 100px;
+  align-items: center;
+}
+
+.trednyImg{
+  position: absolute;
+  top: 300px;
+  z-index: -1;
+}
+.trendyImg2{
+  position: absolute;
+  top: 300px;
+  right: 4%;
+  z-index: -1;
+}

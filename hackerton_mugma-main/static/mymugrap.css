@@ -1,0 +1,218 @@
+#backgorundImgDiv {
+    background-image: url(../img/mainBack.png);
+    width: 1512px;
+    height: 1132px;
+    margin: auto;
+}
+
+#okbtn {
+    position: relative;
+    top: 190px;
+    right: 77px;
+
+    background-color: white;
+    border: white;
+    float: right;
+    margin-right: 20px;
+}
+
+#myprofilewWritePostImg {
+    position: relative;
+    top: 290px;
+    left: 150px;
+}
+
+#titleBackImg {
+    position: relative;
+    top: -225px;
+    left: 510px;
+}
+
+#title {
+    position: relative;
+    top: -290px;
+    left: 580px;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    color: white;
+}
+
+#mugmaLogo {
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+
+#textwriteDiv {
+    width: 831px;
+    height: 325px;
+    
+    position: relative;
+    top: -320px;
+    left: 400px;
+    
+    background-color: white;
+    border-radius: 74px;
+    
+}
+
+#textwrite {
+    width: 736px;
+    height: 287px;
+
+    position: relative;
+    top: 17px;
+    left: 45px;
+
+    border: white;
+
+    resize: none;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #FFCF76;
+}
+
+#userName{
+    width: 157px;
+    height: 48px;
+    
+    position: relative;
+    top: -190px;
+    left: 200px;
+    
+    border: none;
+    background-color:#FFF7EA;
+    border-bottom: solid 3px #F3A20E;
+
+    text-align: center;
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #F3A20E;
+}
+
+.foodImg {
+    margin-right: 10px;
+}
+
+.foodName {
+    display: inline-block;
+    position: relative;
+    top:-65px;
+
+    color: #F3A20E;
+
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+#foodInfo1 {
+    width: 450px;
+    height: 150px;
+    
+    position: relative;
+    top: -500px;
+    left: 400px;
+}
+
+#foodInfo2 {
+    width: 450px;
+    height: 150px;
+    
+    position: relative;
+    top: -650px;
+    left: 870px;
+}
+
+#foodInfo3 {
+    width: 450px;
+    height: 150px;
+    
+    position: relative;
+    top: -600px;
+    left: 400px;
+}
+
+
+#foodInfo4 {
+    width: 450px;
+    height: 150px;
+    
+    position: relative;
+    top: -750px;
+    left: 870px;
+}
+
+.forkImg1 {
+    position: relative;
+    top: -50px;
+    left: -105px;
+    opacity: 0.0;
+}
+
+.forkImg2 {
+    position: relative;
+    top: -50px;
+    left: -105px;
+    opacity: 0.0;
+}
+
+.forkImg3 {
+    position: relative;
+    top: -50px;
+    left: -105px;
+    opacity: 0.0;
+}
+
+.forkImg4 {
+    position: relative;
+    top: -50px;
+    left: -105px;
+    opacity: 0.0;
+}
+
+.foodImg:hover {
+    opacity: 0.3;
+}
+
+.forkImg1:hover {
+    opacity: 0.7;
+}
+
+.forkImg2:hover {
+    opacity: 0.7;
+}
+
+.forkImg3:hover {
+    opacity: 0.7;
+}
+
+.forkImg4:hover {
+    opacity: 0.7;
+}

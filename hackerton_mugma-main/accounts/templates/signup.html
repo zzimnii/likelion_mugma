@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="{% static 'signup.css' %}" rel="stylesheet">
+</head>
+<body>
+    <form class="user" method="POST">
+        {% csrf_token %}
+    <h1 id="title">SIGN UP<button id="closebtn">X</button></h1>
+     <!--float로 오른쪽 위에 띄우기-->
+    <div class="inputDiv">
+        <div class="inputMailTitle">E-MAIL<br> ADDRESS</div>
+        <img src="{% static './img/Line 3.png' %}" alt="line" class="lineMail">
+        <div>
+            <input type="text" class="inputMail" name="email">
+        </div>
+    </div>
+    <br/>
+    <div class="inputDiv">
+        <div class="inputPwTitle">NICKNAME</div>
+        <img src="{% static './img/Line 3.png' %}" alt="line" class="linePw" >
+        <div>
+            <input type="text" class="inputPw" name="username">
+        </div>
+    </div>
+    <div class="inputDiv">
+        <div class="inputPwTitle">PASSWORD</div>
+        <img src="{% static './img/Line 3.png' %}" alt="line" class="linePw">
+        <div>
+            <input type="password" class="inputPw" name="password">
+        </div>
+    </div>
+    <div class="inputDiv">
+        <div class="inputConfirmPwTitle">CONFIRM-<br>PASSWORD</div>
+        <img src="{% static './img/Line 3.png' %}" alt="line" class="linePw">
+        <div>
+            <input type="password" class="inputPw" name="repeat">
+        </div>
+    </div>
+    <br>
+    <div class="smallbuttondiv">
+        <button class="smallbutton" type="submit" id="thispage"><a href="{% url 'signup' %}">SIGN<br/>UP</a></button> <!--누르면 로그인 후 웰컴페이지로 이동-->
+        <button class="smallbutton"><a href="{% url 'login' %}">LOG<br/>IN</a></button>  <!--누르면 로그인 페이지로 이동-->
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'postw.css' %}" />
+</head>
+
+<body>
+  <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+  <header>
+    <div class="menubar">
+      <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+      <a class="b" onclick="location.href='/normal'">NORMAL</a>
+      <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+      {% if user.is_authenticated %}
+      <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+      <a href="{% url 'logout' %}">logout</a>
+      {% else %}
+      <a class="d" onclick="location.href='/login'">LOGIN</a>
+      {% endif %}
+    </div>
+
+    <img class="logo" src="{% static 'img/Group 157.png' %}" onclick="location.href='/'" />
+    <input class="search" type="text" />
+  </header>
+
+
+
+  <input type="text" />
+  </div>
+  <input class="textbox" type="text" />
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div class="contentWrapper">
+    <div class="content">
+      <div class="postBox">
+        <div class="textWrapper">
+          <input class="textbox font-large" type="text" placeholder="제목을 입력하시오." name="title" />
+        </div>
+
+        <div class="writeInfoWrapper">
+          <div class="select-box" >
+            <button type="button" class="select-label"><span class="selected-text">{{update_form.category}}</span>
+            </button>
+            <!-- <ul class="option-list" >
+              <li class="option-item" >비건</li>
+              <li class="option-item" >논비건</li>
+            </ul> -->
+          </div>
+        </div>
+,
+        <div class="descWrapper">
+          <textarea class="textbox description font-large" type="text" placeholder="내용을 입력하시오." name="recipe"></textarea>
+        </div>
+      </div>
+      <div class="imageBox">
+        <div class="filebox">
+          <label for="upload_file"></label>
+          <input type="file" id="upload_file" name="photo" >
+          <img class="image-area"></img>
+        </div>
+        <div class="plusImgWrapper">
+          <!--이 밑에 마이너스 이미지 된게 있는데 그거 누르면 저장 될 수 있나? 일단 그냥 노말 페이지로 갈 수 있게 해놓긴함..-->
+          <div class="plusImg">
+            <input type="image" src="{% static 'img/minus-circle.png' %}" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+  <footer>
+    <img class="footerimg" src="{% static 'img/Group 203.png' %}" />
+  </footer>
+  <script src="{% static 'app.js' %}"></script>
+</body>
+
+</html>

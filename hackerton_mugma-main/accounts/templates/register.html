@@ -1,0 +1,17 @@
+<form class="user" method="POST">
+    {% csrf_token %}
+    <input type="text" name="email" id="exampleInputEmail"
+        placeholder="Enter Your Email">
+    <input type="password" name="password" id="exampleInputPassword"
+        placeholder="Password">
+    <input type="password" name="repeat" id="exampleRepeatPassword"
+        placeholder="Repeat Password">
+    <input type="text" name="username"id="exampleInputUsername"
+        placeholder="Enter Your ID">
+    <input type="submit" value="회원가입">
+    <hr>
+</form>
+
+<div>
+    <a href="{% url 'login' %}">Already have an account? Login!</a>
+</div>

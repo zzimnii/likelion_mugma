@@ -1,0 +1,93 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>머그마-글수정댓글페이지</title>
+    <link href="{% static 'detail.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+    <header>
+      <div class="menubar">
+        <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+        <a class="b" onclick="location.href='/normal'">NORMAL</a>
+        <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+        {% if user.is_authenticated %}
+        <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+        <a href="{% url 'logout' %}">logout</a>
+        {% else %}
+        <a class="d" onclick="location.href='/login'">LOGIN</a>
+        {% endif %}
+    </div>
+      <img class="logo" src="{% static 'img/Group 157.png' %}" />
+      <input class="search" type="text" />
+    </header>
+    <img src="{% static 'img/honey.png' %}" alt="꿀 떨어지는 장식" />
+    <div id="backgorundImgDiv">
+        {% if request.user == recipe_detail.author %}
+        <div class="buttons">
+            <a href="{% url 'delete' recipe_detail.id %}" id="btn">
+                <img src="{% static 'img/trashCan2.png' %}" alt="삭제버튼" id="trashCan" class="oBtn">
+            </a>
+            <a href="{% url 'update' recipe_detail.id %}" id="btn">
+                <img src="{% static 'img/write.png' %}" alt="작성버튼" id="write" class="oBtn">
+            </a>
+        </div>
+        {% endif %}
+        <!-- <img src="./img/mugcup_pic2.png" alt="배경_컵과_버블"> -->
+        <img src="{% static 'img/mugcup_pic2.png' %}" alt="배경_컵과_버블" id="perpect">
+        <div>
+            <p id="title">{{ recipe_detail.title }}</p>
+            <span id="date">{{ recipe_detail.date | date:'Y-m-d' }}</span>
+            <span id="chef">{{ recipe_detail.author.username }}</span>
+            <div id="contentDiv">
+                <p id="content">
+                    {{ recipe_detail.recipe }}
+                </p>
+            </div>
+            <a href="{% url 'likes' recipe_detail.id %}">
+                <img src="{% static 'img/whiteFork.png' %}" alt="하얀포크" id="whiteFork">
+                {% if user in recipe_detail.like.all %}
+                {% else %}
+                {% endif %}
+            </a>
+            <p id="forkNum">{{recipe_detail.like_count}}</p>
+        </div>
+        {% if recipe_detail.photo %}
+        <img id="foodImg" src="{{ recipe_detail.photo.url }}" />
+        {% endif %}
+        <img src="{% static 'img/comment.png' %}" alt="댓글 배경" id="commentBackImg">
+        <div id="commentBox">
+            {% for comment in recipe_detail.comment_set.all %}
+            <div id="commentItem">
+                <img src="{% static 'img/user.png' %}" alt="사용자" id="userImg">
+                <p id="userName">{{ comment.author.username }}</p>
+                <p id="commentContent">{{ comment.comment }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div>
+            <div id="commentWrite">
+                <form method="POST" action="{% url 'new_comment' recipe_detail.id %}">
+                    {% csrf_token %}
+                    <img src="{% static 'img/user.png' %}" alt="사용자" id="userImg">
+                    <p id="userName">{{request.user}}</p>
+                    <input type="text" id="commentContentWrite" name="comment"></p>
+                    <button type="submit" id="writeGo">
+                        작성
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <img src="{% static 'img/company.png' %}" alt="회사정보" id="conpanyInfo">
+</body>
+
+</html>

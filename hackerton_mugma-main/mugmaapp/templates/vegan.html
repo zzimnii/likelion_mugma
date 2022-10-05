@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUGMA</title>
+  
+  <link rel="stylesheet" href="{% static 'nomal.css' %}" />
+  <link rel="stylesheet" href="{% static 'style.css' %} " />
+</head>
+
+<body>
+  <div><img class="honeyback" src="{% static 'img/Group 156.png' %}" /></div>
+  <header>
+    <div class="menubar">
+      <a class="a" onclick="location.href='/NVtrendy'">TRENDY</a>
+      <a class="b" onclick="location.href='/normal'">NORMAL</a>
+      <a class="c" onclick="location.href='/mugchef'">MUGCHEF</a>
+      {% if user.is_authenticated %}
+      <a class="d" onclick="location.href='/mypage'">MYPAGE</button></a>
+      {% else %}
+      <a class="d" onclick="location.href='/login'">LOGIN</a>
+      {% endif %}
+      <a href="{% url 'logout' %}">logout</a>
+    </div>
+    <img class="logo" src="{% static 'img/Group 157.png' %}" />
+    <input class="search" type="text" />
+  </header>
+  <img src="{% static 'img/honey.png' %}" alt="꿀떨어지는윗장식">
+  
+    <section id="ranking">
+      <div>
+        <div id="veganpage">
+          {% for recipe in recipes %}
+          <div class="foodItem">
+            <div class="mugimg"><img src="{% static 'img/Union.png' %}" /></div>
+            <div class="foodimg2">
+              {% if recipe.photo %}
+              <img style="width: 150px; height: 150px; border-radius: 100%;" src="{{ recipe.photo.url }}" class="foodimg2">
+              {% endif %}
+            </div>
+            <div class="text"><a href="{% url 'detail' recipe.id %}">{{ recipe.title }}</div>
+            <div class="chef">{{ recipe.author.username }}</div>
+          </div>
+          {% endfor %}
+          <div class="first"></div>
+          <div class="second"></div>
+          <div class="third"></div>
+        </div>
+      </div>
+    </section>
+    <input
+      class="btn"
+      type="button"
+      value="논비건"
+      onclick="location.href='/NVtrendy'"
+    />
+    <footer>
+        <img class="footerimg" src="{% static 'img/Rectangle 130.png' %}" />
+        <img class="footertext"
+          src="{% static 'img/mugma 주식회사 mugma 이용약관. 개인정보처리방침. 문의하기 대표 동덕멋사2팀 주소 서울특별시 동덕 멋쟁이 사자 동굴 222-222 연락처 000-0000 이메일 mugma@likelion.org 업무시간 9_00-18_00.png' %}" />
+      </footer>
+      <script src="{% static 'nomal.js' %}"></script>
+    </body>
+    
+    </html>

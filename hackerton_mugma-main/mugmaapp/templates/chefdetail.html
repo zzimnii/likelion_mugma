@@ -1,0 +1,17 @@
+<h1>머그쉡의 레시피</h1>
+<p>해당 쉐프의 프로필 겸 작성한글 보기</p>
+{{ chef.username }}쉐프 <button>구독하기</button>
+{% for recipe in chef_recipe %}
+<table width="90%">
+    <tr>
+        <td width="30%"><a href="{% url 'detail' recipe.id %}">{{ recipe.title }}</a></td>
+        <td width="30%">
+            <p>
+                {% if recipe.photo %}
+                <img src="{{ recipe.photo.url }}" alt="" height="50">
+                {% endif %}
+            </p>
+        </td>
+    </tr>
+</table><br>
+{% endfor %}

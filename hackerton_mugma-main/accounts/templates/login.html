@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link href="{% static 'login.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">LOGIN<button id="closebtn">X</button></h1>
+    <!--float로 오른쪽 위에 띄우기-->
+
+    <form class="user" method="POST">
+    {% csrf_token %}
+        <div class="inputDiv">
+            <div class="inputMailTitle">ID<br>USERNAME</div>
+            <img src="{% static 'img/Line 3.png' %}" alt="line" class="lineMail">
+            <div>
+                <input type="text" class="inputMail" id="email" name="email">
+            </div>
+        </div>
+        <br />
+        <div class="inputDiv">
+            <div class="inputPwTitle">PASSWORD</div>
+            <img src="{% static 'img/Line 3.png' %}" alt="line" class="linePw">
+            <div>
+                <input type="password" id="password" name="password" class="inputPw">
+            </div>
+        </div>
+    <br>
+        <div class="smallbuttondiv">
+            <button class="smallbutton"><a href="{% url 'signup' %}">SIGN<br/>UP</a></button> <!--누르면 회원가입 페이지로 이동-->
+            <input type="submit" value="LOGIN" class="smallbutton" id="thispage"><a href="{% url 'home' %}">LOG<br/>IN</a></input>  <!--누르면 로그인 후 웰컴페이지로 이동-->
+        </div>
+    </form>
+</body>
+
+</html>

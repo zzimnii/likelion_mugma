@@ -1,0 +1,135 @@
+#backgorundImgDiv {
+    background-image: url(../img/mainBack.png);
+    width: 1512px;
+    height: 1132px;
+    margin: auto;
+}
+
+#okbtn {
+    position: relative;
+    top: 190px;
+    right: 77px;
+
+    background-color: white;
+    border: white;
+    float: right;
+    margin-right: 20px;
+}
+
+#myprofilewWritePostImg {
+    position: relative;
+    top: 290px;
+    left: 150px;
+}
+
+#titleBackImg {
+    position: relative;
+    top: -225px;
+    left: 840px;
+}
+
+#title {
+    position: relative;
+    top: -285px;
+    left: 910px;
+
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    color: white;
+}
+
+#mugmaLogo {
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+
+#userName{
+    width: 157px;
+    height: 48px;
+    
+    position: relative;
+    top: -190px;
+    left: 200px;
+    
+    border: none;
+    background-color:#FFF7EA;
+    border-bottom: solid 3px #F3A20E;
+
+    text-align: center;
+    /*글씨체*/
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    color: #F3A20E;
+}
+
+#chefDiv {
+    width: 900px;
+    height: 382px;
+    
+    position: relative;
+    top: -530px;
+    left: 400px;
+    margin: 30px;
+}
+
+.chefItem {
+    display: inline-block;
+    margin:20px;
+}
+
+.deliltechefImg{
+    position: relative;
+    top: -37px;
+    left: -65px;
+    opacity: 0.0;
+}
+
+.chefName {
+    font-family: 'Hancom MalangMalang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* ㄹㄹ */
+
+    color: #F3A20E;
+    font: bolder;
+    padding-left: 13px;
+}
+
+.deliltechefImg:hover {
+    opacity: 0.7;
+}
+
+.chefItem:hover {
+    opacity: 0.3;
+}
+
+#paging {
+    background-color:#f1b342;
+    display:inline-block;
+    position:relative;
+    left: 760px;
+    top: 60px;
+  }
+  

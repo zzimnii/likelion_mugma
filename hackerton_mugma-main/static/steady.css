@@ -1,0 +1,186 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css");
+
+* {
+  font-family: "NanumSquareRound";
+}
+
+header {
+  position: fixed;
+  width: 1512px;
+  height: 99.92px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 5px 0px gray;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.honeyback {
+  position: absolute;
+  width: 1512.57px;
+  height: 358px;
+  left: 0px;
+  top: 0px;
+}
+
+.logo {
+  position: fixed;
+  width: 294.79px;
+  height: 186px;
+  left: 616.21px;
+  top: 0px;
+}
+
+.search {
+  position: fixed;
+  left: 1300px;
+  top: 40px;
+}
+
+.menubar {
+  margin-top: 30px;
+  margin-left: 100px;
+  word-spacing: 20%;
+}
+
+.a {
+  width: 181px;
+  height: 52.26px;
+  left: 22px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.a:hover {
+  color: #f1b342;
+}
+
+.b {
+  width: 168px;
+  height: 52.26px;
+  margin-left: 70px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.b:hover {
+  color: #f1b342;
+}
+
+.c {
+  width: 200px;
+  height: 52.26px;
+  margin-left: 70px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.c:hover {
+  color: #f1b342;
+}
+
+.d {
+  width: 200px;
+  height: 52.26px;
+  margin-left: 500px;
+  top: 23.83px;
+
+  font-family: "Hancom MalangMalang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  /* ㅇㅇ */
+
+  color: #ffcf76;
+}
+
+.d:hover {
+  color: #f1b342;
+}
+
+.bar {
+  position: fixed;
+  width: 187px;
+  height: 9px;
+  left: 29px;
+  top: 100px;
+}
+
+.footerimg {
+  position: absolute;
+  top: 779px;
+}
+
+.footertext {
+  position: absolute;
+  width: 550px;
+  height: 120px;
+  top: 950px;
+  left: 450px;
+}
+
+.mugimg {
+  position: absolute;
+  width: 281px;
+  height: 284px;
+  left: 154px;
+  top: 283px;
+}
+
+.mugimg2 {
+  position: absolute;
+  width: 281px;
+  height: 284px;
+  left: 615px;
+  top: 283px;
+}
+
+.mugimg3 {
+  position: absolute;
+  width: 281px;
+  height: 284px;
+  left: 1077px;
+  top: 283px;
+}
+
+.mugimg4 {
+  position: absolute;
+  width: 281px;
+  height: 284px;
+  left: 382px;
+  top: 598px;
+}
+
+.mugimg5 {
+  position: absolute;
+  width: 281px;
+  height: 284px;
+  left: 844px;
+  top: 598px;
+}
